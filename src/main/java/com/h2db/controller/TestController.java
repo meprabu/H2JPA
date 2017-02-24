@@ -3,11 +3,12 @@ package com.h2db.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.h2db.dao.TestDao;
-//import com.h2db.repository.Test;
+import com.h2db.model.Test;
 
 
 @RestController
@@ -18,9 +19,9 @@ public class TestController {
 	TestDao testdao;
 	
 	@RequestMapping("/ids")
-	public List getIds(){
+	public List<Test> getIds(){
 		
-		List lst = testdao.getAllUsers();
+		List<Test> lst = testdao.getTests();
 		
 		return lst;
 	}

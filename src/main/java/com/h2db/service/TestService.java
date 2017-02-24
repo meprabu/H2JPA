@@ -1,12 +1,10 @@
-package com.h2db.dao;
+package com.h2db.service;
 
 import java.util.List;
 
 import com.h2db.model.Test;
 
-public interface TestDao {
-	
+public interface TestService {
 	void create(Test test);
 	List<Test> getTests();
-	
 }
