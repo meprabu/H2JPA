@@ -30,7 +30,8 @@ public class TestController {
 	public String sayHello(){
 		
 		String hello= "Helllo";
-		
+		Test test = new Test(1,"test");
+		testdao.create(test);
 		return hello;
 	}
 
