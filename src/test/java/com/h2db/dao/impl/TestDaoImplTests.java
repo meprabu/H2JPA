@@ -60,12 +60,12 @@ public class TestDaoImplTests {
 
 	
 	private List<com.h2db.model.Test> getTests(){
-		List<com.h2db.model.Test> lstTest = new ArrayList<com.h2db.model.Test>();
+		tests = new ArrayList<com.h2db.model.Test>();
 		com.h2db.model.Test test1 = new com.h2db.model.Test(1,"test1");
 		com.h2db.model.Test test2 = new com.h2db.model.Test(2,"test2");
-		lstTest.add(test1);
-		lstTest.add(test2);
-		return lstTest;
+		tests.add(test1);
+		tests.add(test2);
+		return tests;
 	}
 	
 	private com.h2db.model.Test getTest(){
