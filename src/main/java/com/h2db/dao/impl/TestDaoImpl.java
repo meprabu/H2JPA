@@ -42,4 +42,11 @@ public class TestDaoImpl implements TestDao{
 	    	logger.debug("test-----------------");
 	    	return lstTest;
 	    }
+
+
+		public void setEntityManager(EntityManager entityManager) {
+			this.entityManager = entityManager;
+		}
+	    
+	    
 }
