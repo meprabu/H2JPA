@@ -5,8 +5,8 @@
 
 	<groupId>com.h2db</groupId>
 	<artifactId>h2hibernate</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<version>1.0</version>
+	<packaging>war</packaging>
 
 	<name>h2hibernate</name>
 	<description>Demo project for Spring Boot</description>
@@ -50,6 +50,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>H2Hibernate</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
